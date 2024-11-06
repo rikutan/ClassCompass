@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/class_room_setting_change_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/class_room_setting_change_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:text="戻る"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_change_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.classcompass.classIconImageView
+            android:id="@+id/class_room_setting_change_icon"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_view"
+            app:srcCompat="@drawable/defaultclassicon" />
+
+        <ImageView
+            android:id="@+id/class_room_setting_change_film"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintEnd_toEndOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintTop_toTopOf="@+id/class_room_setting_change_icon"
+            app:srcCompat="@drawable/class_room_setting_change_btn" />
+
+        <TextView
+            android:id="@+id/class_room_setting_change_iconInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="編集"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintEnd_toEndOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintTop_toTopOf="@+id/class_room_setting_change_icon" />
+
+        <TextView
+            android:id="@+id/class_room_setting_change_classNameInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="クラスルーム名"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toEndOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintTop_toTopOf="@+id/class_room_setting_change_icon" />
+
+        <EditText
+            android:id="@+id/class_room_setting_change_classNameInput"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_classNameInfo"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_classNameInfo" />
+
+        <LinearLayout
+            android:id="@+id/class_room_setting_change_linear"
+            android:layout_width="660dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_memberInfo"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_memberInfo">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/class_room_setting_change_memberInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="メンバー編集"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_icon"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_icon" />
+
+        <TextView
+            android:id="@+id/class_room_setting_change_yearInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="登録年度"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_linear"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_linear" />
+
+        <EditText
+            android:id="@+id/class_room_setting_change_yearInput"
+            android:layout_width="660dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_yearInfo"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_yearInfo" />
+
+        <TextView
+            android:id="@+id/class_room_setting_change_schoolNameInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="学校名"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_yearInput"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_yearInput" />
+
+        <EditText
+            android:id="@+id/class_room_setting_change_schoolNameInput"
+            android:layout_width="660dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_schoolNameInfo"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_schoolNameInfo" />
+
+        <Button
+            android:id="@+id/class_room_setting_change_classDeleteCheckBtn"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/red"
+            android:text="ルーム削除"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_schoolNameInput" />
+
+        <View
+            android:id="@+id/class_room_setting_change_classDeleteCheck"
+            android:layout_width="600dp"
+            android:layout_height="300dp"
+            android:background="@drawable/class_room_setting_change_delete_bg"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/class_room_setting_change_classDeleteCheckInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="クラスルームを削除します"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/class_room_setting_change_classDeleteCheck"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_classDeleteCheck"
+            app:layout_constraintTop_toTopOf="@+id/class_room_setting_change_classDeleteCheck" />
+
+        <Button
+            android:id="@+id/class_room_setting_change_classDeleteBtn"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="70dp"
+            android:backgroundTint="@color/red"
+            android:text="削除"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/class_room_setting_change_classDeleteCheck"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_classDeleteCheckInfo" />
+
+        <Button
+            android:id="@+id/class_room_setting_change_classDeleteCancelBtn"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/green"
+            android:text="キャンセル"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/class_room_setting_change_classDeleteCheck"
+            app:layout_constraintTop_toBottomOf="@+id/class_room_setting_change_classDeleteCheckInfo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

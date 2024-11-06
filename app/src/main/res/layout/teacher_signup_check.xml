@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <View
+        android:id="@+id/teacher_signup_check_view"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/teacher_signup_check_backtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="戻る"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_view"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_checktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="以下の内容で送信してよろしいですか？"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_view" />
+
+    <View
+        android:id="@+id/teacher_signup_check_viewflame"
+        android:layout_width="640dp"
+        android:layout_height="750dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/check_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_checktxt" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayMail"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="値の表示領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_check_viewflame" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="メールアドレス"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_signup_check_displayMail"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayMail" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_kana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="フリガナ"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_signup_check_displayKana"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayKana" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayPass"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="値の表示領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_mailunderline" />
+
+    <View
+        android:id="@+id/teacher_signup_check_kanaunderline"
+        android:layout_width="520dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_displayKana"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayKana"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_displayKana" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="パスワード"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_signup_check_displayPass"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayPass" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayKana"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="値の表示領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_nameunderline" />
+
+    <View
+        android:id="@+id/teacher_signup_check_nameunderline"
+        android:layout_width="520dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_displayName"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayName"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_displayName" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayName"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="値の表示領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_passunderline" />
+
+    <View
+        android:id="@+id/teacher_signup_check_passunderline"
+        android:layout_width="520dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_displayPass"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayPass"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_displayPass" />
+
+    <View
+        android:id="@+id/teacher_signup_check_mailunderline"
+        android:layout_width="520dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_displayMail"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayMail"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_displayMail" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="お名前"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_signup_check_displayName"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_displayName" />
+
+
+    <TextView
+        android:id="@+id/teacher_signup_check_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="生年月日"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_signup_check_displayYear"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_kanaunderline"
+        app:layout_constraintVertical_bias="0.904" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/teacher_signup_check_birthunderline"
+        android:layout_width="520dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_displayMonth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayYear"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_kanaunderline" />
+
+    <TextView
+        android:id="@+id/teacher_signup_checkyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="年"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_displayYear"
+        app:layout_constraintStart_toEndOf="@+id/teacher_signup_check_displayYear"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_check_displayYear" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayMonth"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="領"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_checkyear"
+        app:layout_constraintStart_toEndOf="@+id/teacher_signup_checkyear"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_checkyear" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_months"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="月"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_displayMonth"
+        app:layout_constraintStart_toEndOf="@+id/teacher_signup_check_displayMonth"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_check_displayMonth" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_displayDay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:text="領"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_months"
+        app:layout_constraintStart_toEndOf="@+id/teacher_signup_check_months"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_check_months"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/teacher_signup_check_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="日"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_signup_check_displayDay"
+        app:layout_constraintEnd_toEndOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/teacher_signup_check_displayDay"
+        app:layout_constraintTop_toTopOf="@+id/teacher_signup_check_displayDay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/teacher_signup_check_sendBtn"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="@color/yellow"
+        android:text="送信"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/teacher_signup_check_corrBtn"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="200dp"
+        android:backgroundTint="@color/pink"
+        android:text="修正"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_signup_check_viewflame"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

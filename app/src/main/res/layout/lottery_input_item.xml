@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lottery_input_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lottery_input_itemName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="例）Aチーム"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottery_input_num"
+        app:layout_constraintStart_toEndOf="@+id/lottery_input_num"
+        app:layout_constraintTop_toTopOf="@+id/lottery_input_num" />
+
+    <EditText
+        android:id="@+id/lottery_input_winner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="例）5"
+        android:inputType="number|numberSigned"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottery_input_itemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lottery_input_itemName"
+        app:layout_constraintTop_toTopOf="@+id/lottery_input_itemName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

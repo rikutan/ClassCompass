@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/background">
+
+
+
+
+    <View
+        android:id="@+id/student_info_regi_edit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_backTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="戻る"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_edit_view"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_view"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_edit_view" />
+
+    <com.example.classcompass.IconImageView
+        android:id="@+id/student_info_regi_edit_editImg"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_view"
+        app:srcCompat="@drawable/default_icon" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="編集"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_edit_editImg"
+        app:layout_constraintEnd_toEndOf="@+id/student_info_regi_edit_editImg"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_editImg"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_edit_editImg" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_selfIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="コメント"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_info_regi_edit_comment"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_comment" />
+
+    <EditText
+        android:id="@+id/student_info_regi_edit_comment"
+        android:layout_width="660dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="※クリックして変更"
+        android:inputType="text"
+        android:paddingStart="40dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_editImg" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_mailChangeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="メールアドレスをかえる"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_info_regi_edit_expTxt1"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_expTxt1" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_expTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="144dp"
+        android:text="かえるボタンをおすとメールアドレスを"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_comment" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_expTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="かえることができるよ！"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_expTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_expTxt1" />
+
+    <EditText
+        android:id="@+id/student_info_regi_edit_mailChangeForm"
+        android:layout_width="500dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/teacher_info_regi_edit_bg"
+        android:ems="10"
+        android:hint="例）xxxxx@sample.com"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_expTxt2" />
+
+    <Button
+        android:id="@+id/student_info_regi_edit_sendBtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/pink"
+        android:text="かえる"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_edit_mailChangeForm"
+        app:layout_constraintStart_toEndOf="@+id/student_info_regi_edit_mailChangeForm"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_edit_mailChangeForm" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_passChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="パスワードをかえる"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_info_regi_edit_passChangeTxt"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_passChangeTxt" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_passChangeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="120dp"
+        android:text="※あたらしくするボタンをタップすると"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_mailChangeForm" />
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_passChangeTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="パスワードを新しくするとメールがとどくよ！"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_edit_passChangeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_passChangeTxt" />
+
+    <Button
+        android:id="@+id/student_info_regi_edit_resettingBtn"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/pink"
+        android:text="あたらしくする"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_edit_passChangeTxt2"
+        app:layout_constraintStart_toEndOf="@+id/student_info_regi_edit_passChangeTxt2"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_edit_passChangeTxt2" />
+
+
+    <TextView
+        android:id="@+id/student_info_regi_edit_ana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_edit_resettingBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

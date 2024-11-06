@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/new_classroom_info_input_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_backTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:text="戻る"
+        app:layout_constraintBottom_toBottomOf="@+id/new_classroom_info_input_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="新規クラスルーム作成"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_toolbar" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学校名"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_info_input_schoolname"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_input_schoolname" />
+
+    <EditText
+        android:id="@+id/new_classroom_info_input_schoolname"
+        android:layout_width="550dp"
+        android:layout_height="75dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="例）□□□□学校"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_title" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="クラス名"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_info_input_classroom"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_input_classroom" />
+
+    <EditText
+        android:id="@+id/new_classroom_info_input_classroom"
+        android:layout_width="550dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="例）○年○組"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_err1" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西暦 ※本年度担当クラスの西暦を入力してください"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_input_info_yearEdit"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_input_info_yearEdit"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="272dp"
+        android:text="年"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_classroom_input_info_yearEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/new_classroom_input_info_yearEdit"
+        app:layout_constraintTop_toTopOf="@+id/new_classroom_input_info_yearEdit" />
+
+    <EditText
+        android:id="@+id/new_classroom_input_info_yearEdit"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="2000"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_err2" />
+
+    <Button
+        android:id="@+id/new_classroom_info_input_nextBtn"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/yellow"
+        android:text="次に進む"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_input_info_yearEdit" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_err1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_schoolname" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_err2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_input_classroom" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_input_err3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_input_info_yearEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

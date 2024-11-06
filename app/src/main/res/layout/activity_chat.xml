@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChatActivity">
+
+    <View
+        android:id="@+id/chat_header"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chatBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="＜"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_header"
+        app:layout_constraintStart_toStartOf="@+id/chat_header"
+        app:layout_constraintTop_toTopOf="@+id/chat_header" />
+
+    <TextView
+        android:id="@+id/chatRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_header"
+        app:layout_constraintStart_toEndOf="@+id/chatBackBtn"
+        app:layout_constraintTop_toTopOf="@+id/chat_header" />
+
+    <View
+        android:id="@+id/chat_header_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/chatRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/chat_header"
+        app:layout_constraintStart_toStartOf="@+id/chat_header" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/chat_input_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_header" />
+
+
+    <View
+        android:id="@+id/chat_input_box"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="@color/yellow"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/chat_input"
+        android:layout_width="650dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="メッセージを入力"
+        android:inputType="textMultiLine"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_input_box"
+        app:layout_constraintStart_toStartOf="@+id/chat_input_box"
+        app:layout_constraintTop_toTopOf="@+id/chat_input_box" />
+
+    <ImageButton
+        android:id="@+id/chat_send_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chat_input"
+        app:layout_constraintTop_toTopOf="@+id/chat_input_box"
+        app:srcCompat="@drawable/send_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

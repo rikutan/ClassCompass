@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/student_info_regi_setting_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_backTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="もどる"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_setting_view"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_view"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_setting_view" />
+
+    <View
+        android:id="@+id/student_info_regi_setting_nameView"
+        android:layout_width="600dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/teacher_info_regi_setting_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_view" />
+
+    <com.example.classcompass.IconImageView
+        android:id="@+id/student_info_regi_setting_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_setting_nameView"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_nameView"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_setting_nameView"
+        app:srcCompat="@drawable/default_icon" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_info_regi_setting_icon"
+        app:layout_constraintStart_toEndOf="@+id/student_info_regi_setting_icon"
+        app:layout_constraintTop_toTopOf="@+id/student_info_regi_setting_icon" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_selfIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:text="コメント"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_nameView" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_display_selfIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_selfIntro"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_selfIntro" />
+
+    <View
+        android:id="@+id/student_info_regi_setting_underLine1"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_selfIntro"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_display_selfIntro" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:text="生まれた日"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_underLine1" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_display_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_birthday"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_birthday" />
+
+    <View
+        android:id="@+id/student_info_regi_setting_underLine2"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_birthday"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_display_birthday" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_mailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:text="メールアドレス"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_underLine2" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_display_mailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_mailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_mailAddress" />
+
+    <View
+        android:id="@+id/student_info_regi_setting_underLine3"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_mailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_display_mailAddress" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:text="パスワード"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_underLine3" />
+
+    <TextView
+        android:id="@+id/student_info_regi_setting_display_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="かえるときは、したのかえるボタンをおしてね！！"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_password"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_password" />
+
+    <View
+        android:id="@+id/student_info_regi_setting_underLine4"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/student_info_regi_setting_password"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_display_password" />
+
+    <Button
+        android:id="@+id/student_info_regi_setting_editBtn"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/pink"
+        android:text="かえる"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_regi_setting_underLine4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

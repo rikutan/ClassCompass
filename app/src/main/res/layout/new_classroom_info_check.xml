@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/new_classroom_info_check_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_backTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_classroom_info_check_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="以下の内容で作成してよろしいですか？"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_toolbar" />
+
+    <View
+        android:id="@+id/new_classroom_info_check_underline3"
+        android:layout_width="600dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/check_view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_title" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学校名"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_info_check_display_schoolname"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline1" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_display_schoolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="値の表示領域"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintTop_toTopOf="@+id/new_classroom_info_check_underline3" />
+
+    <View
+        android:id="@+id/new_classroom_info_check_underline1"
+        android:layout_width="450dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_display_schoolname" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="クラス名"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_info_check_display_classname"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline2" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_display_classname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="値の表示領域"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_underline1" />
+
+    <View
+        android:id="@+id/new_classroom_info_check_underline2"
+        android:layout_width="450dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_display_classname" />
+
+    <View
+        android:id="@+id/build_check_under_bar3"
+        android:layout_width="450dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_display_year" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西暦"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/new_classroom_info_check_display_year"
+        app:layout_constraintStart_toStartOf="@+id/build_check_under_bar3" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_display_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="値の表示領域"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintStart_toStartOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_underline2" />
+
+    <Button
+        android:id="@+id/new_classroom_info_check_makeBtn"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/yellow"
+        android:text="作成"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_underline3"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <Button
+        android:id="@+id/new_classroom_info_check_corrBtn"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/pink"
+        android:text="修正"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/new_classroom_info_check_makeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_info_check_underline3" />
+
+    <TextView
+        android:id="@+id/new_classroom_info_check_yearTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="年"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_classroom_info_check_display_year"
+        app:layout_constraintStart_toEndOf="@+id/new_classroom_info_check_display_year"
+        app:layout_constraintTop_toTopOf="@+id/new_classroom_info_check_display_year" />
+</androidx.constraintlayout.widget.ConstraintLayout>

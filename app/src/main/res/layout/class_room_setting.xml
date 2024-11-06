@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/class_room_setting_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/class_room_setting_backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00000000"
+        android:text="戻る"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_view"
+        app:layout_constraintStart_toStartOf="@id/class_room_setting_view"
+        app:layout_constraintTop_toTopOf="@id/class_room_setting_view" />
+
+    <View
+        android:id="@+id/class_room_setting_info_view"
+        android:layout_width="600dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/class_room_setting_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_view" />
+
+    <com.example.classcompass.classIconImageView
+        android:id="@+id/class_room_setting_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_info_view"
+        app:layout_constraintStart_toStartOf="@+id/class_room_setting_info_view"
+        app:layout_constraintTop_toTopOf="@+id/class_room_setting_info_view"
+        app:srcCompat="@drawable/defaultclassicon" />
+
+    <TextView
+        android:id="@+id/class_room_setting_classname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/class_room_setting_info_view"
+        app:layout_constraintStart_toEndOf="@+id/class_room_setting_icon"
+        app:layout_constraintTop_toTopOf="@+id/class_room_setting_info_view" />
+
+    <View
+        android:id="@+id/class_room_setting_year_hr"
+        android:layout_width="600dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/class_room_setting_year_info"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_year" />
+
+    <TextView
+        android:id="@+id/class_room_setting_year_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:text="登録年度"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_info_view" />
+
+    <TextView
+        android:id="@+id/class_room_setting_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/class_room_setting_year_info"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_year_info" />
+
+    <TextView
+        android:id="@+id/class_room_setting_schoolname_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:text="学校名"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_year_hr" />
+
+    <TextView
+        android:id="@+id/class_room_setting_schoolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/class_room_setting_schoolname_info"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_schoolname_info" />
+
+    <View
+        android:id="@+id/class_room_setting_schoolname_hr"
+        android:layout_width="600dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/class_room_setting_schoolname_info"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_schoolname" />
+
+    <TextView
+        android:id="@+id/class_room_setting_qr_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="QRコード確認"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_schoolname_hr" />
+
+    <com.example.classcompass.classIconImageView
+        android:id="@+id/class_room_setting_qr"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_qr_info" />
+
+    <Button
+        android:id="@+id/class_room_setting_nextBtn"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/pink"
+        android:text="編集"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_room_setting_qr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

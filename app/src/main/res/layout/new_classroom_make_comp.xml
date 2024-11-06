@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/new_classroom_make_comp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_classroom_make_comp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="クラスが新しく作成されました！"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_make_comp_view" />
+
+    <TextView
+        android:id="@+id/new_classroom_make_comp_msg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="QRコードを使ってメンバーを"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_make_comp_qrcodeView" />
+
+    <TextView
+        android:id="@+id/new_classroom_make_comp_msg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="追加してみましょう！"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_make_comp_msg1" />
+
+    <Button
+        android:id="@+id/new_classroom_make_comp_topBtn"
+        android:layout_width="500dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/green"
+        android:text="トップ画面に戻る"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_make_comp_msg2" />
+
+    <ImageView
+        android:id="@+id/new_classroom_make_comp_qrcodeView"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_classroom_make_comp_title"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

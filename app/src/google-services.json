@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990728590567",
+    "project_id": "classcompass-4d21e",
+    "storage_bucket": "classcompass-4d21e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990728590567:android:80fdd42eccfc25297bbe42",
+        "android_client_info": {
+          "package_name": "com.example.classcompass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdNmIYNr3uqCwrrMYsZDeS3MjGm8TCtdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
